@@ -32,10 +32,12 @@ solveHamiltonianConstraint <- function(a,b,c,d,n,m,TOL,N,M){
         
         
         #Step 1
+        
         h <- (b-a)/n                     #Step for x
         k <- (d-c)/m                     #Step for y
         
         #Step 2
+        
         for (i in 2:n-1){
                 x[i] <- a + i*h         #Generates x grid
         }
@@ -47,6 +49,7 @@ solveHamiltonianConstraint <- function(a,b,c,d,n,m,TOL,N,M){
         }
         
         #Step 4
+        
         for (i in 1:n){
                 for (j in 2:m){
                         w[i,j] <- 0     #Put O's to w[i,j]
@@ -54,11 +57,13 @@ solveHamiltonianConstraint <- function(a,b,c,d,n,m,TOL,N,M){
         }
         
         #Step 5
+        
         lambda <- h^2/k^2             #Basics needed to the
         mu <- 2*(1+lambda)            #Gauss-Seidel Algoritgm
         l= 1                          # Initialize l
         
         #Step 6 #(Gauss-Seidel iterations 7-19)
+        
         while (l <= N){
                 
 
@@ -204,6 +209,7 @@ solveHamiltonianConstraint <- function(a,b,c,d,n,m,TOL,N,M){
                         NORM <- abs(w[n-1,1] - z)
                 }
                 w[n-1,1] <- z
+                
                 #Step 17
                 
                 if(NORM <= TOL){                        
