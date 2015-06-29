@@ -6,6 +6,8 @@
 
 ##### I'll begin this project by posting the code developed in my Degree Thesis, which was a numerical solver, using finite differences, of the initial data equations for boosted Bowen-York trumpet black holes, specifically the hamiltonian constraint using a conformal transverse-traceless approach to Einstein's equations in the 3+1 formalism of numerical relativity. I formulated the fundamental equations in numerical relativity via the 3+1 decomposition, applied to boosted Bowen-York trumpet black hole initial data, and then presented a methodology to develop an algorithm in order to solve them. The algorithm was implemented using the R programming language. Finally, I'll add to this project some illustrative representations for wormholes initial data, their transformation to single trumpet black holes, and a simulation for binary trumpets.
 
+--------- 
+
 ##### The code and the videos are free to share, modify and use, under the GNU General Public License v2.0. Feel free to email me if you have any questions about the code or how you, or your group can contribute to this project.
 
 ##### My email is favio.vazquezp@gmail.com.
